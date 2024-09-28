@@ -61,6 +61,7 @@ rollup({
     const { code } = minify(data);
     fs.writeFileSync(umd, `${banner}\n${code}`); // with banner
 
+    //prueba
     // output gzip size
     const int = sizer.sync(code);
     console.info('Compilation was a success! 👍');
